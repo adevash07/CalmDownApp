@@ -20,7 +20,7 @@
 
   <!-- Started project here-->  
   <header class="mb-5">
-    <section class="nav container-fluid py-3">
+    <section class="nav container-fluid py-1 fixed-top">
       <div class="container">
         <div class="row">
           <nav class="col-12 navbar">
@@ -30,7 +30,7 @@
       </div>
     </div>
   </section>
-<section id="header" class="container-fluid headerInto mt-3">
+<section id="header" class="container-fluid headerInto mt-5 pt-3">
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-7 flex-column flex-start my-5">
@@ -50,7 +50,7 @@
         </form>
         
         
-        <!-- Optional md form  -->
+        <!-- Optional Input  -->
         <form action="php/signUp.inc.php" method="POST" class="d-block d-md-none mt-5">
           <div class="formInput col-12 input-group mb-3">
             <input type="search" name="email" id="searchBar" class="form-control text-center rounded-pill pl-5" placeholder="Enter Email Address" aria-label="searchBar"
@@ -75,11 +75,11 @@
   <div class="container p-3">
     <div class="row justify-content-center">
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center flex-wrap flex-md-nowrap">
-          <div class="rounded mb-3 yourDash mr-0 mr-md-3 ml-none ml-md-5 animated pulse slow infinite">
+          <div class="rounded mb-3 yourDash mr-0 mr-md-3 ml-0 ml-lg-5 animated pulse slow infinite">
             <div class="media my-4 pl-4 pr-3">
                 <img src="img/put.svg" class="img-fluid icon" alt="..."></span>
             </div>
-            <div class="pl-4 pr-5 pb-3">
+            <div class="pl-4 pr-4 pb-3">
               <div class="media-body auth">
                 <h5 class="mt-0 mb-1"><span class="stronger animated">Equalizer</span></h5>
                 Voice tone equalizer and regulation suggestion, helps to keep you calm and reserved
@@ -91,7 +91,7 @@
             <div class="media my-4 pl-4 pr-3">
               <img src="img/put2.svg" class="img-fluid icon" alt="..."></span>
             </div>
-            <div class="pl-4 pr-5 pb-3">
+            <div class="pl-4 pr-4 pb-3">
               <div class="media-body auth">
                 <h5 class="mt-0 mb-1"><span class="stronger">AI Assistant</span></h5>
                 With your very own personal conversation expert in your pocket, you won’t get to say a wrong word again
@@ -103,7 +103,7 @@
             <div class="media my-4 pl-4 pr-3">
               <img src="img/put33.svg" class="img-fluid icon" alt="..."></span>
             </div>
-            <div class="pl-4 pr-5 pb-3">
+            <div class="pl-4 pr-4 pb-3">
               <div class="media-body auth">
                 <h5 class="mt-0 mb-1"><span class="stronger">Handsfree</span></h5>
                 Voice recorder to record your business and sensitive conversations for future purposes.
@@ -115,7 +115,7 @@
             <div class="media my-4 pl-4 pr-3">
               <img src="img/put4.svg" class="img-fluid icon" alt="..."></span>
             </div>
-            <div class="pl-4 pr-5 pb-3">
+            <div class="pl-4 pr-4 pb-3">
               <div class="media-body auth">
                 <h5 class="mt-0 mb-1"><span class="stronger">Recorder</span></h5>
                 Voice tone equalizer and regulation suggestion, helps to keep you calm and reserved
@@ -127,8 +127,8 @@
    </div>
 </section>
 
-<section class="container-fluid my-5">
-  <div class="container py-5">
+<section class="container-fluid my-3">
+  <div class="container py-3">
     <div id="show" class="row my-5 wow slideInLeft fast">
           <div class="col-5 wrapper py-5">
               <div class="mx-auto d-flex justify-content-end animated pulse slow delay-1s infinite"><img src="img/fone1.svg" class="ml-3 img-fluid icon" width="100%"
@@ -143,7 +143,7 @@
             </div>
       </div><!--FIRST PROTOTYPE-->
     
-  <div id="show" class="row my-5 py-5 wow slideInLeft fast">
+  <div id="show" class="row my-3 py-4 wow slideInLeft fast">
     <div class="col-5 order-2 wrapper">
       <div class="mx-auto d-flex justify-content-start animated pulse slow delay-1s infinite"><img src="img/fone2.svg" class="ml-3 img-fluid icon" width="100%" alt="...">
       </div>
@@ -161,13 +161,13 @@
 <!--LAST PROTOTYPE-->
   <section class="my-5 container-fluid" id="last">
     <div class="container py-5 mx-3 row d-flex align-items-center justify-content-center mx-auto">
-      <div class="case col-12 text-center mb-4 p-5">
+      <div class="case col-12 text-center mb-4 p-1 p-md-5">
         <h5>Never want to say regretful words when angry?</h5>
-        <p class="px-5 mt-5">Control all your tone of voice and conversations with the new <strong>CalmDown</strong>, coming soon to your mobiles. Join the
+        <p class="px-0 px-md-5 mt-5">Control all your tone of voice and conversations with the new <strong>CalmDown</strong>, coming soon to your mobiles. Join the
         limited list of beta testers and be one of the first to try it out</p>
         <!--<a href="#" class="btn-warning bg-primal btn-lg mt-4 p-3"> Read More </i></a>-->
       </div>
-      <div class="wrapper col-md-6 mb-5 animated flipInY slower infinite">
+      <div id="flipper" class="wrapper col-md-6 mb-3 animated flipInY slower">
         <div class="about-img mx-auto d-flex justify-content-center"><img src="img/lastimg.svg" class="mx-auto img-fluid icon" 
           width="100%" alt="...">
         </div>
@@ -177,11 +177,11 @@
 <section id="letter" class="container my-5 rounded-lg d-flex flex-column justify-content-between align-items-center p-5">
   <h6 class="headerH5 pt-2 text-center">Join Our Monthly Newsletter</h6>
 
-  <p class="HeaderH6 mt-3 px-5 text-center">Never miss out when we launch and our regular article newsletters,<br>
+  <p class="HeaderH6 mt-3 px-2 px-md-5 text-center">Never miss out when we launch and our regular article newsletters,<br>
                                               subscribe now</p>
   
-  <form action="php/signUp.inc.php" method="POST" class="col-12 d-flex justify-content-center d-none d-md-block">
-    <div class="formInput searchWrapper w-100 w-md-75 input-group mb-5 rounded-pill mt-4">
+  <form action="php/signUp.inc.php" method="POST" class="col-12 justify-content-center d-none d-md-flex">
+    <div class="formInput searchWrapper w-75 input-group mb-5 rounded-pill mt-4">
     <input type="search" id="dEmail" name="email" class="form-control  rounded-pill pl-5" placeholder="Email address" aria-label="searchBar"
       aria-describedby="searchBar">
     <div class="input-group-append bg-primary rounded-pill">
@@ -189,7 +189,20 @@
     </div> 
   </div>
   </form>
-  
+
+  <!-- Optional Input  -->
+        <form action="php/signUp.inc.php" method="POST" class="d-block d-md-none col-12 mt-5">
+          <div class="formInput col-12 input-group mb-3 p-0">
+            <input type="search" name="email" id="Dmail" class="form-control text-center rounded-pill" placeholder="Enter Email Address" aria-label="searchBar"
+                      aria-describedby="searchBar">
+            </div>
+            <div class="formInput col-12 p-0">
+              <button type="submit" class="input-group-text searcher w-100 d-flex justify-content-center text-white rounded-pill bg-primary px-5" id="success1"><span class="text-center">Subcribe<span></button>
+            </div>
+        </form>
+      </div>
+
+      
   
 </section>
 <footer class="footer p-5">

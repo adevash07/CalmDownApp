@@ -4,10 +4,16 @@ html {
 }
 * {
     padding: 0px;
+    outline-color: rgb(216, 216, 216)!important;
 }
 body {
     color: #333333;
     font-family: Nunito Sans, Roboto, sans-serif;
+    font-weight: 100;
+    
+}
+#text {
+    opacity: 0.8;;
 }
 header {
     min-height: 700px;  
@@ -54,6 +60,14 @@ line-height: calc(24px + 14 * ((100vw - 320px) / 680));
     line-height: calc(24px + 6 * ((100vw - 320px) / 680));
     font-weight: 100;
     color:  #0847CE;
+}
+#flipper {
+    -webkit-animation-duration: 10s;
+    -moz-animation-duration: 10s;
+    -moz-animation-iteration-count: 3;
+    -webkit-animation-iteration-count: 3;
+    animation-iteration-count: 3;
+    animation-duration: 10s;
 }
 h5 {
     font-weight: 900!important;
@@ -130,6 +144,15 @@ footer {
     background-color: black;
 }
 
+@media screen and (max-width: 1216px) {
+    .yourDash, .activeDash {
+   min-width: 13em;
+   min-height: 22em;
+
+}
+
+}
+
 
 @media screen and (max-width: 768px) {
     .input-group-append {
@@ -145,8 +168,17 @@ footer {
     min-height: 1100px;  
 }
 
+.searchWrapper {
+    width: 100%!important;
+}
+
 #dEmail {
     min-height: 3.5rem;
+}
+
+section#letter.rounded-lg {
+    border-top-right-radius: 5rem!important;
+    border-bottom-left-radius: 5rem!important;
 }
 
 }
