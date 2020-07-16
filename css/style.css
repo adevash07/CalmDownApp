@@ -51,6 +51,7 @@ line-height: calc(24px + 14 * ((100vw - 320px) / 680));
 
 .headerH6 {
     font-size: calc(16px + 2 * ((100vw - 320px) / 680));
+    line-height: calc(24px + 6 * ((100vw - 320px) / 680));
     font-weight: 100;
     color:  #0847CE;
 }
@@ -63,16 +64,26 @@ h5 {
 }
 input#searchBar {
     background: rgba(8, 71, 206, 0.07);
-    border-right-color: #0847CE;
     outline-style: none;
+    z-index: 0;
 }
-
+input#dEmail {
+   border-right-color: #0847CE;
+    outline-style: none;
+    z-index: 0;
+}
+.searcher {
+    -webkit-box-shadow: 2px 1px 17px 0px rgba(8, 71, 206, 0.66);
+    -moz-box-shadow:    2px 1px 17px 0px rgba(8, 71, 206, 0.66);
+    box-shadow:         2px 1px 17px 0px rgba(8, 71, 206, 0.66);
+}
 .input-group-append {
     width: 8rem;
     text-align: center!important;
     margin-left: -4rem;
     z-index: 1;
 }
+
 .case h5 {
     font-family: Nunito Sans;
     font-style: normal;
@@ -104,6 +115,10 @@ box-shadow:         2px 1px 17px 0px rgba(8, 71, 206, 0.66);
 #last {
    background: rgba(8, 71, 206, 0.07);; 
 }
+.animated.slower {
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+}
 #letter {
     background-color: #0847CE;
     min-height: 15rem;
@@ -120,4 +135,18 @@ footer {
     .input-group-append {
         margin-left: -3rem;
     }
+    input.form-control {
+        min-height: auto;
+    }
+    .headerInto{
+        background-image: none;
+    }
+    header {
+    min-height: 1100px;  
+}
+
+#dEmail {
+    min-height: 3.5rem;
+}
+
 }

@@ -33,25 +33,37 @@
 <section id="header" class="container-fluid headerInto mt-3">
   <div class="container">
     <div class="row">
-      <div class="col-7 flex-column flex-start my-5">
-        <h1 class="headerH5 mb-2"> &mdash;  AI Voice Assitant</h1>
-        <h5 class="d-none d-md-block headerH1 mb-3">Conversation <br> Regulator</h5>
-        <h5 class="headerH6 my-5">The artificial intelligence voice assistant that helps you 
+      <div class="col-12 col-md-7 flex-column flex-start my-5">
+        <h1 class="headerH5 mb-3"> &mdash;  AI Voice Assitant</h1>
+        <h5 class="headerH1 mb-4">Conversation <br> Regulator</h5>
+        <h5 class="headerH6 mt-3 mb-4">The artificial intelligence voice assistant that helps you 
         to regulate your conversations and not go overboard. Coming
         soon, join the waitlist now..</h5>
-        <form action="php/signUp.inc.php" method="POST">
+        <form action="php/signUp.inc.php" method="POST" class="d-none d-md-block">
           <div class="formInput searchWrapper input-group mb-5">
-            <input type="text address" name="email" id="searchBar" class="form-control rounded-pill pl-5" placeholder="Email Address" aria-label="searchBar"
+            <input type="search" name="email" id="searchBar" class="form-control rounded-pill pl-5" placeholder="Email Address" aria-label="searchBar"
                       aria-describedby="searchBar">
             <div class="input-group-append">
               <button type="submit" class="input-group-text text-white rounded-pill bg-primary px-5" id="success1">Subcribe</button>
             </div>
           </div>
         </form>
+        
+        
+        <!-- Optional md form  -->
+        <form action="php/signUp.inc.php" method="POST" class="d-block d-md-none mt-5">
+          <div class="formInput col-12 input-group mb-3">
+            <input type="search" name="email" id="searchBar" class="form-control text-center rounded-pill pl-5" placeholder="Enter Email Address" aria-label="searchBar"
+                      aria-describedby="searchBar">
+            </div>
+            <div class="formInput col-12">
+              <button type="submit" class="input-group-text searcher w-100 d-flex justify-content-center text-white rounded-pill bg-primary px-5" id="success1"><span class="text-center">Subcribe<span></button>
+            </div>
+        </form>
       </div>
 
-      <div class="col-5 d-flex justify-content-end pr-0">
-        <img src="img/headerImg.svg" class="pr-0 img-fluid wow slideInRight slow" alt="CalmDown App Image Prototype">
+      <div class="col-12 col-md-5 d-flex justify-content-center justify-content-md-end pr-0">
+        <img src="img/headerImg.svg" class="pr-0 rotate img-fluid wow slideInRight slow" alt="CalmDown App Image Prototype">
       </div>
     </div>
   </div>
@@ -168,15 +180,16 @@
   <p class="HeaderH6 mt-3 px-5 text-center">Never miss out when we launch and our regular article newsletters,<br>
                                               subscribe now</p>
   
-  <form action="php/signUp.inc.php" method="POST" class="col-12 d-flex justify-content-center">
-    <div class="formInput searchWrapper w-75 input-group mb-5 rounded-pill mt-4">
-    <input type="text" id="dEmail" name="email" class="form-control rounded-pill" placeholder="Email address" aria-label="searchBar"
+  <form action="php/signUp.inc.php" method="POST" class="col-12 d-flex justify-content-center d-none d-md-block">
+    <div class="formInput searchWrapper w-100 w-md-75 input-group mb-5 rounded-pill mt-4">
+    <input type="search" id="dEmail" name="email" class="form-control  rounded-pill pl-5" placeholder="Email address" aria-label="searchBar"
       aria-describedby="searchBar">
     <div class="input-group-append bg-primary rounded-pill">
       <button type="submit" class="input-group-text text-white px-5 bg-primary rounded-pill" id="success">Subcribe</button>
     </div> 
   </div>
   </form>
+  
   
 </section>
 <footer class="footer p-5">
