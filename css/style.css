@@ -54,6 +54,9 @@ line-height: calc(24px + 14 * ((100vw - 320px) / 680));
     font-weight: 100;
     color:  #0847CE;
 }
+h5 {
+    font-weight: 900!important;
+}
 .searchWrapper, input.form-control {
     min-height:3.5rem;
     border-right: transparent;
@@ -93,6 +96,10 @@ input#searchBar {
 .activeDash {
     background: #0847CE;
     color:white;
+    -webkit-box-shadow: 2px 1px 17px 0px rgba(8, 71, 206, 0.66);
+-moz-box-shadow:    2px 1px 17px 0px rgba(8, 71, 206, 0.66);
+box-shadow:         2px 1px 17px 0px rgba(8, 71, 206, 0.66);
+    
 }
 #last {
    background: rgba(8, 71, 206, 0.07);; 

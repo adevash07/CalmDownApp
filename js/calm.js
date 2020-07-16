@@ -1,45 +1,37 @@
 $( document ).ready(function() {
   new WOW().init();
 });
-
-  (function () {
-    let form = document.getElementById('subcribeNow');
-    let condition = document.getElementById('condition');
-    let submit = document.getElementById('submitBtn');
-    let email = document.getElementById('email');
-    function success(){
-      debugger
-      let user = 1;
-      function replacer() {
-
-    condition.classList.replace('d-none', 'd-block');
-        form.classList.replace('d-block','d-none');
-
-        setTimeout(() => {
-    condition.classList.replace('d-block', 'd-none');
-          condition.classList.replace('d-none', 'd-block');
-        }, 3000);
-
-      }
-      let raw = {
-    "title": "Subcribtion for CalmDown newsletter Successful",
-        "body": "We say big thank from member of CalmDown App Team and  welcome to the world of futuristic App right in the present",
-        "user_unique_id": {user}
+(function () {
+    let submit = document.getElementById('success');
+    let submit1 = document.getElementById('success1');
+   
+    function mailUp() {
+      let upmail = document.getElementById('searchBar').value;
+      Email.send({
+        SecureToken: "1d7bce67-f036-4658-83f4-ab678d510233",
+        To: upmail,
+        From: "calmdownapplication@gmail.com",
+        Subject: "Subcribe Sucessful",
+        Body: "Thank you for your subcribtion to our newsletter, we at calmdown application are happy to welcome to experience futuristic app right here in the present"
+      }).then(
+        message => alert(`Sucessful: ${message}`)
+      )
     }
-      let domain = "https://notification.micoapi.dev"
-        let requestOptions = {
-    method: 'POST',
-          body: JSON.stringify(raw),
-          redirect: 'follow'
-        };
-          fetch("{{ domain }}/api/notification/new", requestOptions)
-          .then(response => response.text())
-          .then(result => alert('A Confirmation mail has been sent to your mail. thanks.'))
-          .catch(error => console.log('error', error));
 
-          user++;
-          console.log('done');
-      }
-    submit.addEventListener('click', success);
+    function maildown(){
+     let downMail = document.getElementById('dEmail').value;
+      Email.send({
+        SecureToken: "1d7bce67-f036-4658-83f4-ab678d510233",
+        To: downMail,
+        From: "calmdownapplication@gmail.com",
+        Subject: "Subcribe Sucessful",
+        Body: "Thank you for your subcribtion to our newsletter, we at calmdown application are happy to welcome to experience futuristic app right here in the present"
+      }).then(
+        message => alert(`Sucessful: ${message}`)
+      )
+    }
+    
+    submit.addEventListener('click', maildown);
+    submit1.addEventListener('click', mailUp)
 
   })();

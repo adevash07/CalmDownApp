@@ -20,19 +20,18 @@
   echo $exc->getTraceAsString();
 }*/
 
-  $db = new mysqli('sql3.freemysqlhosting.net', 'sql3355041', 'SfX9vHfXxY', 'sql3355041');
+  $db = new mysqli('us-cdbr-east-02.cleardb.com', 'bb1c9f4eff0d0f', '5fd4f78b', 'heroku_1d342a93ed6fd5a');
 } catch (Exception $exc) {
   echo $exc->getTraceAsString();
 }
 
-/*
-if(isset($_POST['email'])) {
+
+/*if(isset($_POST['email'])) {
   $email = mysqli_real_escape_string($db, $_POST['email']);
 
   $db->query("INSERT INTO `subcriber`(`email`) VALUES ('$email');");
-  header("Location: ../calm.php");
+  header("Location: ../calm.php?signupsucessful");
 
-    exit();
 }*/
 
 if(isset($_POST['email'])) {
