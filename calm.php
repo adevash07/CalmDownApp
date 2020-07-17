@@ -41,10 +41,10 @@
         soon, join the waitlist now..</h5>
         <form action="php/signUp.inc.php" method="POST" class="d-none d-md-block">
           <div class="formInput searchWrapper input-group mb-5" required>
-            <input type="search" name="email" id="searchBar" class="form-control rounded-pill" placeholder="Email Address" aria-label="searchBar"
+            <input type="email" name="email" id="searchBar" class="form-control rounded-pill" placeholder="Email Address" aria-label="searchBar"
                       aria-describedby="searchBar">
             <div class="input-group-append">
-              <button type="submit" class="input-group-text text-white rounded-pill bg-primary px-5" id="success1">Subcribe</button>
+              <button type="submit" class="input-group-text text-white rounded-pill btn-primary px-5" id="success1">Subcribe</button>
             </div>
           </div>
         </form>
@@ -53,7 +53,7 @@
         <!-- Optional Input  -->
         <form action="php/signUp.inc.php" method="POST" class="d-block d-md-none mt-5">
           <div class="formInput col-12 input-group mb-3">
-            <input type="search" name="email" id="searchBar2" class="form-control text-center rounded-pill" placeholder="Enter Email Address" aria-label="searchBar"
+            <input type="email" name="email" id="searchBar2" class="form-control text-center rounded-pill" placeholder="Enter Email Address" aria-label="searchBar"
                       aria-describedby="searchBar" required>
             </div>
             <div class="formInput col-12">
@@ -127,10 +127,10 @@
    </div>
 </section>
 
-<section class="container-fluid my-3">
+<section class="container-fluid my-2">
   <div class="container py-3">
-    <div id="show" class="row my-5 wow slideInLeft fast">
-          <div class="col-5 wrapper py-5">
+    <div id="show" class="row my-4 wow slideInLeft fast">
+          <div class="col-5 wrapper py-3">
               <div class="mx-auto d-flex justify-content-end animated pulse slow delay-1s infinite"><img src="img/fone1.svg" class="ml-3 img-fluid icon" width="100%"
                 alt="...">
               </div>
@@ -143,7 +143,7 @@
             </div>
       </div><!--FIRST PROTOTYPE-->
     
-  <div id="show" class="row my-3 py-4 wow slideInLeft fast">
+  <div id="show" class="row my-2 py-2 wow slideInLeft fast">
     <div class="col-5 order-2 wrapper">
       <div class="mx-auto d-flex justify-content-start animated pulse slow delay-1s infinite"><img src="img/fone2.svg" class="ml-3 img-fluid icon" width="100%" alt="...">
       </div>
@@ -182,7 +182,7 @@
   
   <form action="php/signUp.inc.php" method="POST" class="col-12 justify-content-center d-none d-md-flex">
     <div class="formInput searchWrapper w-75 input-group mb-5 rounded-pill mt-4">
-    <input type="search" id="dEmail" name="email" class="form-control  rounded-pill pl-5" placeholder="Email address" aria-label="searchBar"
+    <input type="email" id="dEmail" name="email" class="form-control  rounded-pill pl-5" placeholder="Email address" aria-label="searchBar"
       aria-describedby="searchBar" required>
     <div class="input-group-append bg-primary rounded-pill">
       <button type="submit" class="input-group-text text-white px-5 bg-primary rounded-pill" id="success">Subcribe</button>
@@ -193,7 +193,7 @@
   <!-- Optional Input  -->
         <form action="php/signUp.inc.php" method="POST" class="d-block d-md-none col-12 mt-5">
           <div class="formInput col-12 input-group mb-3 p-0">
-            <input type="search" name="email" id="Dmail" class="form-control text-center rounded-pill" placeholder="Enter Email Address" aria-label="searchBar"
+            <input type="email" name="email" id="Dmail" class="form-control text-center rounded-pill" placeholder="Enter Email Address" aria-label="searchBar"
                       aria-describedby="searchBar" required>
             </div>
             <div class="formInput col-12 p-0">
@@ -207,7 +207,7 @@
 </section>
 <footer class="footer p-5">
   <div class="text-center text-white"><marquee>Coming Soon...<span>&nbsp</span> Coming soon.. <span>&nbsp</span> Coming soon</marquee></div>
-  <div class="container text-center text-white px-5 d-flex justify-content-between">
+  <div class="container text-center text-white px-1 px-md-5 d-flex justify-content-between">
     <p>Designer by @popsabey</p>
     <p>Coded by @debugger</p>
   </div>

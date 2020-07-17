@@ -77,9 +77,16 @@ h5 {
     min-height:3.5rem;
     border-right: transparent;
 }
+input#searchBar.form-control::focus, input#searchBar.form-control::active  {
+    outline: 0 none !important;
+    border-color:none !important;
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+
 input#searchBar {
     background: rgba(8, 71, 206, 0.07);
-    outline-style: none;
+    outline-style: none!important;
     z-index: 0;
 }
 input#searchBar2 {
@@ -101,8 +108,11 @@ input#dEmail {
 .input-group-append {
     width: 8rem;
     text-align: center!important;
-    margin-left: -4rem;
+    margin-left: -5rem;
     z-index: 1;
+}
+.input-group-append:focus {
+
 }
 
 .case h5 {
