@@ -40,9 +40,9 @@
         to regulate your conversations and not go overboard. Coming
         soon, join the waitlist now..</h5>
         <form action="php/signUp.inc.php" method="POST" class="d-none d-md-block">
-          <div class="formInput searchWrapper input-group mb-5" required>
+          <div class="formInput searchWrapper input-group mb-5">
             <input type="search" name="email" id="searchBar" class="form-control rounded-pill" placeholder="Email Address" aria-label="searchBar"
-                      aria-describedby="searchBar">
+                      aria-describedby="searchBar" required>
             <div class="input-group-append">
               <button type="submit" class="input-group-text text-white rounded-pill bg-primary px-5" id="success1">Subcribe</button>
             </div>
@@ -69,6 +69,10 @@
   </div>
 </section>
   </header>
+<script type="text/javascript">
+        alert('Subcribtion to our newsletters was sucessful, thanks');
+        window.location.replace('https://calmdown.herokuapp.com/calm.php');
+</script>
   <!--HEADER END HERE-->
  
   <section id="services" class="container-fluid p-5">
@@ -183,7 +187,7 @@
   <form action="php/signUp.inc.php" method="POST" class="col-12 justify-content-center d-none d-md-flex">
     <div class="formInput searchWrapper w-75 input-group mb-5 rounded-pill mt-4">
     <input type="search" id="dEmail" name="email" class="form-control  rounded-pill pl-5" placeholder="Email address" aria-label="searchBar"
-      aria-describedby="searchBar" required>
+      aria-describedby="searchBar">
     <div class="input-group-append bg-primary rounded-pill">
       <button type="submit" class="input-group-text text-white px-5 bg-primary rounded-pill" id="success">Subcribe</button>
     </div> 
@@ -194,7 +198,7 @@
         <form action="php/signUp.inc.php" method="POST" class="d-block d-md-none col-12 mt-5">
           <div class="formInput col-12 input-group mb-3 p-0">
             <input type="search" name="email" id="Dmail" class="form-control text-center rounded-pill" placeholder="Enter Email Address" aria-label="searchBar"
-                      aria-describedby="searchBar" required>
+                      aria-describedby="searchBar">
             </div>
             <div class="formInput col-12 p-0">
               <button type="submit" class="input-group-text searcher w-100 d-flex justify-content-center text-white rounded-pill bg-primary px-5" id="success1"><span class="text-center">Subcribe<span></button>
@@ -228,69 +232,6 @@ var Email = { send: function (a) { return new Promise(function (n, e) { a.nocach
  </script>
  <!--- Custom js _-->
 <script src="js/calm.js" type="text/javascript">
-  (function () {
-    let submit = document.getElementById('success');
-    let submit1 = document.getElementById('success1');
-   
-    function mailUp() {
-      alert('subcribtion succesful');
-      let upmail = document.getElementById('searchBar').value;
-      let upmail2 = document.getElementById('searchBar2').value;
-      if ( upmail == "") {
-          Email.send({
-        SecureToken: "1d7bce67-f036-4658-83f4-ab678d510233",
-        To: upmail,
-        From: "calmdownapplication@gmail.com",
-        Subject: "Subcribe Sucessful",
-        Body: "Thank you for your subcribtion to our newsletter, we at calmdown application are happy to welcome to experience futuristic app right here in the present"
-      }).then(
-        message => alert(`Sucessful: ${message}`)
-      )
-      } else {
-        Email.send({
-        SecureToken: "1d7bce67-f036-4658-83f4-ab678d510233",
-        To: upmail2,
-        From: "calmdownapplication@gmail.com",
-        Subject: "Subcribe Sucessful",
-        Body: "Thank you for your subcribtion to our newsletter, we at calmdown application are happy to welcome to experience futuristic app right here in the present"
-      }).then(
-        message => alert(`Sucessful: ${message}`)
-      )
-      }
-      
-    }
-
-    function maildown(){
-      alert('subcribtion succesful');
-     let downMail = document.getElementById('dEmail').value;
-     let downMail2 = document.getElementById('Dmail').value;
-      if (downMail == "") {
-         Email.send({
-        SecureToken: "1d7bce67-f036-4658-83f4-ab678d510233",
-        To: downMail,
-        From: "calmdownapplication@gmail.com",
-        Subject: "Subcribe Sucessful",
-        Body: "Thank you for your subcribtion to our newsletter, we at calmdown application are happy to welcome to experience futuristic app right here in the present"
-      }).then(
-        message => alert(`Sucessful: ${message}`)
-      )
-      } else {
-        Email.send({
-          SecureToken: "1d7bce67-f036-4658-83f4-ab678d510233",
-          To: downMail2,
-          From: "calmdownapplication@gmail.com",
-          Subject: "Subcribe Sucessful",
-          Body: "Thank you for your subcribtion to our newsletter, we at calmdown application are happy to welcome to experience futuristic app right here in the present"
-        }).then(
-          message => alert(`Sucessful: ${message}`)
-        )
-      }
-    }
-    
-    submit.addEventListener('click', maildown);
-    submit1.addEventListener('click', mailUp)
-
-  })();
 </script>
 </body>
 </html>

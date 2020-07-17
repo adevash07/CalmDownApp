@@ -60,6 +60,7 @@ line-height: calc(24px + 14 * ((100vw - 320px) / 680));
     line-height: calc(24px + 6 * ((100vw - 320px) / 680));
     font-weight: 100;
     color:  #0847CE;
+    opacity: 0.6;
 }
 #flipper {
     -webkit-animation-duration: 10s;
@@ -81,6 +82,12 @@ input#searchBar {
     outline-style: none;
     z-index: 0;
 }
+input#searchBar2 {
+    background: rgba(8, 71, 206, 0.07);
+    outline-style: none;
+    z-index: 0;
+}
+
 input#dEmail {
    border-right-color: #0847CE;
     outline-style: none;

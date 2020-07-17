@@ -15,32 +15,29 @@
 
  /*/
  try {
-  $db = new mysqli('localhost', 'root', '', 'bakers');
-} catch (Exception $exc) {
-  echo $exc->getTraceAsString();
-}
-
-  /*$db = new mysqli('us-cdbr-east-02.cleardb.com', 'bb1c9f4eff0d0f', '5fd4f78b', 'heroku_1d342a93ed6fd5a');
+ /* $db = new mysqli('localhost', 'root', '', 'bakers');
 } catch (Exception $exc) {
   echo $exc->getTraceAsString();
 }*/
 
-
-if(isset($_POST['email'])) {
-  $email = mysqli_real_escape_string($db, $_POST['email']);
-
-  $db->query("INSERT INTO `subcriber`(`email`) VALUES ('$email');");
-  header("Location: ../calm.php?signupsucessful");
-
+  $db = new mysqli('us-cdbr-east-02.cleardb.com', 'bb1c9f4eff0d0f', '5fd4f78b', 'heroku_1d342a93ed6fd5a');
+} catch (Exception $exc) {
+  echo $exc->getTraceAsString();
 }
 
 /*if(isset($_POST['email'])) {
   $email = mysqli_real_escape_string($db, $_POST['email']);
 
-  $db->query("INSERT INTO `subcribers`(`email`) VALUES ('$email');");
-  header("Location: ../calm.php");
-
-    exit();
+  $db->query("INSERT INTO `subcriber`(`email`) VALUES ('$email');");
+  header("Location: ../success.php");
 }*/
+
+if(isset($_POST['email'])) {
+  $email = mysqli_real_escape_string($db, $_POST['email']);
+
+  $db->query("INSERT INTO `subcribers`(`email`) VALUES ('$email');");
+  header("Location: ../success.php");
+
+}
   
 ?>
