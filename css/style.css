@@ -111,9 +111,6 @@ input#dEmail {
     margin-left: -5rem;
     z-index: 1;
 }
-.input-group-append:focus {
-
-}
 
 .case h5 {
     font-family: Nunito Sans;
